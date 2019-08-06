@@ -34,7 +34,7 @@ Python3.6+ (miniconda/anaconda recommended!)
 1. このrepoをローカルにcloneまたはdownloadする
 
 ```
-git clone jp_wakati
+git clone https://github.com/irasin/jp_wakati
 cd jp_wakati
 ```
 
