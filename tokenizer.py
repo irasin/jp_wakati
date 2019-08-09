@@ -23,7 +23,7 @@ def cost_minimum(left_node, right_node):
     return cost_matrix[id_pair] + right_node['entry'][2]
 
 def forward(sentence):
-    BOS_node = {'begin': -1, 'next': [], 'entry': _BOS_ENTRY, 'cost': 0}
+    BOS_node = {'begin': -1, 'next': [], 'entry': _BOS_ENTRY, 'cost': sys.maxsize}
     end_node_list = defaultdict(list)
     end_node_list[0].append(BOS_node)
 
