@@ -55,8 +55,8 @@ def forward(sentence):
     # {'begin': i, 'next': [], 'entry': [], 'cost': j}
     # begin: i番目の位置/BOS_nodeからの距離
     # next: 次に接続ノードのリスト
-    # entry: i番目の単語エントリー
-    # cost: BOS_nodeからここまでのパスの最小コスト
+    # entry: 単語エントリー
+    # cost: BOS_nodeから現在ノードまでのパスの最小コスト
     BOS_node = {'begin': -1, 'next': [], 'entry': _BOS_ENTRY, 'cost': 0}
 
     # end_node_listは各位置に終わるノードのリストの結果を保存するdictである
