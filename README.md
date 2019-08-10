@@ -16,7 +16,8 @@
 ├ tokenize.py ..ビタビアルゴリズムを実装するファイル
 │
 ├ test.py ..分かち書きの実行例
-
+|
+├ test_mecab.py ..MeCabを用いた分かち書きの実行例
 ```
 
 ------
@@ -44,7 +45,12 @@ cd jp_wakati
 python test.py
 ```
 
+3. MeCabをインストールできたら、MeCabの実行例`test_mecab.py`を実行する
 
+```bash
+python test_mecab.py
+```
+MeCabのインストールは一番下を参照
 
 ### データの説明
 
