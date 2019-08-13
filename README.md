@@ -54,7 +54,7 @@ MeCabのインストールは一番下を参照
 
 ### データの説明
 
-`dict/*.csv`は品詞ごとに単語をまとめたipadic辞書である。
+`dict/*.csv`は品詞ごとに単語をまとめた[mecab-ipadic](https://github.com/taku910/mecab/tree/master/mecab-ipadic)辞書である。
 
 具体的に、各単語は以下のような形式で表現される。
 
