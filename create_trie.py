@@ -42,7 +42,7 @@ else:
     dict_entries = []
     df_path_list = glob.glob(DICT_CSV_PATH)
     for file_path in df_path_list:
-        with open(file_path, 'r') as f:
+        with open(file_path, 'r', encoding='utf-8') as f:
             data = f.read().split('\n')
         for line in data:
             try:
