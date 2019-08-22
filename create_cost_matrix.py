@@ -21,7 +21,7 @@ if os.path.exists(COST_MATRIX_PATH):
 else:
     # コスト表を構築する
     logging.log(logging.INFO, f'Start generateing cost matrix from {RAW_COST_MATRIX_PATH} ===>\n')
-    with open(RAW_COST_MATRIX_PATH) as f:
+    with open(RAW_COST_MATRIX_PATH, encoding='utf-8') as f:
         data = f.read().split('\n')
 
     # コスト表 (シンプルなdictで実装する)
