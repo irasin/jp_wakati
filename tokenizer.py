@@ -126,5 +126,7 @@ def backward(node):
 def tokenize(sentence):
     lattice = forward(sentence)
     res = backward(lattice)
+    res = set(tuple(i) for i in res)
 
     return '\n'.join('/'.join(sentence[1: -1]) for sentence in res)
+
